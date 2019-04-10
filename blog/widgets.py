@@ -2,6 +2,7 @@ from django import forms
 from django.utils.safestring import mark_safe
 import re
 
+# from AS slider code
 class RangeSlider(forms.TextInput):
     def __init__(self, minimum, maximum, step, elem_name,*args,**kwargs):
         widget = super(RangeSlider,self).__init__(*args,**kwargs)

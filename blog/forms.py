@@ -11,4 +11,5 @@ class CommentForm(forms.Form):
     body = forms.CharField(widget=forms.Textarea(attrs={
         "class": "form-control",
         "placeholder": "Leave a comment!"}))
+    # mc added per AS code
     slider_val = RangeSliderField(label=True, minimum=1, maximum=10)

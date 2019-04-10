@@ -18,6 +18,7 @@ class Post(models.Model):
 class Comment(models.Model):
     author = models.CharField(max_length=60)
     body = models.TextField()
+    # mc added
     slider_val = models.CharField(max_length=20)
     created_on = models.DateTimeField(auto_now_add=True)
     post = models.ForeignKey('Post', on_delete=models.CASCADE)

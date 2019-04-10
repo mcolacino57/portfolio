@@ -1,6 +1,7 @@
 from django import forms
 from .widgets import RangeSlider
 
+# mc added per AS code
 class RangeSliderField(forms.CharField):
     def __init__(self, *args, **kwargs):
         self.name = kwargs.pop('name', '')
