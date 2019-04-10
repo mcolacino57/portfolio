@@ -51,7 +51,7 @@ def blog_detail(request, pk):
             comment = Comment(
                 author=form.cleaned_data["author"],
                 body=form.cleaned_data["body"],
-                # mc added
+                # mc added based on AS code
                 slider_val=form.cleaned_data["slider_val"],
                 post=post,
             )
